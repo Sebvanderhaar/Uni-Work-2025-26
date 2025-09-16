@@ -1,0 +1,15 @@
+10% Oral Presentation
+90% Coursework
+
+
+Learning Outcomes:	
+After taking this unit, the student should be able to:
+    research the background to the project using academic journals, textbooks and computer-based resources;
+    demonstrate some innovation and initiative, as well as a basic understanding of the theory and background to the project;
+    demonstrate industry and motivation in carrying out the project;
+    for an experimental project, demonstrate good practical skills in the construction of apparatus and circuits and in data measurement and analysis;
+    for a computational project, design, write and test computer programs to simulate the physical system under study, and interpret the results from these programs.
+
+Content:	
+    Final year projects offered cover a wide range of physics and most reflect the research or teaching interests of academic staff. 
+    Projects may be related to the Department's externally sponsored research projects (funded by the Research Councils, public companies, and UK government or EU agencies), with the development of undergraduate experiments, or with the investigation of topics relating to physics education.
