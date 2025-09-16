@@ -1,0 +1,32 @@
+100% exam
+
+Learning Outcomes:	
+After taking this unit the student should be able to: 
+    deduce the motion of particles and light from given spacetime metrics; 
+    account for the different predictions of general relativity and Newtonian gravity; 
+    explain the properties of static and rotating black holes; 
+    appreciate the problems of interfacing general relativity and quantum theory.
+
+
+Content:	
+Gravity and relativity: 
+    review of special relativity and Newtonian gravity, 
+    the equivalence principle, 
+    curved spacetime, 
+    the classical tests of GR, 
+    geodesic equations of motion.
+The Schwarzschild metric: 
+    orbits, 
+    perihelion advance, 
+    deflection of light, 
+    static black holes, 
+    the event horizon, 
+    the singularity. 
+The Kerr metric: 
+    rotating black holes, 
+    frame dragging, 
+    the ergoregion. 
+Quantum gravity: 
+    black hole thermodynamics, 
+    Hawking radiation, 
+    current theories of everything.
