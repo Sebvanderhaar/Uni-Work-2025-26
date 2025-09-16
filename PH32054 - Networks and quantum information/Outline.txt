@@ -1,0 +1,50 @@
+100% exam
+
+Learning Outcomes:	
+After taking the section on networks, the student should be able to:
+    describe uses of networks in at least 2 different areas of science and technology;
+    define, quantify and interpret some simple measures of network structure;
+    explain methods for calculating more complex measures of network structure;
+    derive and interpret structural measures for simple model networks;
+    outline the key features of illustrative dynamic network models.
+    After taking the section on quantum information the student should be able to:
+    explain that information is physical, and critically appraise how this alters from the classical to quantum domain;
+    explain in detail the concept of quantum entanglement, the EPR paradox, experimental tests of Bell's inequalities;
+    illustrate uses of entanglement in quantum information protocols, such as quantum cryptography, dense coding and teleportation.
+
+
+Content:	
+Networks (10 hours): 
+    Empirical examples of networks; 
+        technological, 
+        social, 
+        information, 
+        biological. 
+    Network analysis; 
+        elementary graph theory, 
+        terminology and definitions, 
+        local and global measures of network structure. 
+    Network models; 
+        trees, 
+        regular graphs, 
+        random graphs of various types: 
+            Erdo&776;s-Re&769;nyi; 
+            small world, 
+            scale-free, 
+            configuration, 
+            exponential. 
+    Mixing patterns and community structure. 
+    Processes on networks; 
+        at least one of 
+            epidemics on complex networks, 
+            synchronisation, 
+            temporal networks. 
+Quantum information and computation (10 hours): 
+    Classical information theory; 
+    Quantum Cryptography; 
+    Quantum gates and circuits; 
+    Quantum no-cloning theorem; 
+    Density operators and von Neumann entropy; 
+    Quantum entanglement, EPR paradox and Bell's inequalities; 
+    Quantum dense coding and teleportation. 
+    Quantum computing - Deutch-Jozsa algorithm.
