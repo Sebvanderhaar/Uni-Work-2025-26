@@ -1,0 +1,27 @@
+100% exam
+
+Learning Outcomes:	
+After taking this unit the student should be able to: 
+    explain the importance of symmetry in theoretical physics; 
+    classify the symmetries of physical systems; 
+    explain aspects of abstract group theory; 
+    apply concepts of group theory to problems in quantum mechanics; 
+    describe, classify and outline the role of topology in physical systems.
+
+
+Content:	
+    Symmetries in nature. 
+    Group theory: 
+        concepts, and general properties. 
+        Discrete groups and their representation. 
+        Continuous groups and their representation. 
+        Space-time symmetries. 
+        Gauge symmetry. 
+        Topological symmetries. 
+    Applications, drawn from classical dynamics, quantum, atomic and condensed matter physics: 
+        including symmetry decomposition, 
+        perturbations, 
+        level splitting and selection rules; 
+        molecular vibrations;
+        LCAO theory; 
+        graphene.
