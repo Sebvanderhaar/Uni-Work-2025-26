@@ -1,0 +1,46 @@
+100% exam
+
+Learning Outcomes:	
+After taking this unit the student should be able to: 
+    construct two- and many-particle wavefunctions of the appropriate symmetry and explain the exchange interaction; 
+    apply approximate methods for stationary states; 
+    solve time-dependent problems and derive and use Fermi's Golden Rule; 
+    derive and explain the significance of exact solutions of quantum systems; 
+    derive and interpret solutions of the Dirac equation.
+
+Content:	
+Many particle systems (4 lecture hours): 
+    Two particle systems: 
+        Distinguishable vs indistinguishable particle systems; 
+    Symmetric and antisymmetric eigenfunctions: 
+        Bosons and fermions. 
+        Pauli exclusion principle. 
+        Triplet and singlet states. 
+        Exchange interaction. 
+    Many particle systems: 
+        Slater determinant wave function.
+Approximation techniques for stationary states (5 lecture hours): 
+    Non-degenerate perturbation theory; 
+    degenerate perturbation theory; 
+    Variational methods; 
+    WKB;
+    Born approximation. 
+    Applications. 
+Time-dependent quantum mechanics (5 lecture hours): 
+    Time evolution, TDSE, examples (e.g. spin precession). 
+    Heisenberg picture/Heisenberg equation of motion. 
+    Time-dependent perturbation theory: 
+        Fermi's Golden Rule. 
+Exactly soluble problems in quantum mechanics (3 lecture hours): 
+    Methods, solution, properties and physical applications of key quantum systems e.g.: 
+        3D harmonic oscillator; 
+        charged particles in uniform magnetic field (Landau levels); 
+        Aharonov-Bohm effect. 
+Introduction to the Dirac equation (3 lecture hours): 
+    Invariance under Lorentz transformation. 
+    Dirac equation, Dirac sea. 
+    Plane wave spinors; 
+    minimal coupling to electromagnetic fields; 
+    Non-relativistic limit of the Dirac equation: 
+        spin-orbit coupling, 
+        atomic fine structure.
