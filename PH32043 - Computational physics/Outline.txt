@@ -11,4 +11,10 @@ After taking this unit, the student should be able to:
     explain the methodology, relevant issues and output of the investigations performed.
 
 Content:	
-11 hours of lectures plus 22 hours of PC labs covering: Construction of a mathematical model of a physical system, discretisation and de-dimensionalisation; Numerical methods for ODE and PDE initial value problems, numerical stability; Linear algebra methods; Numerical methods for ODE and PDE boundary value problems, finite difference and finite element methods; Many-body problems; High-performance computing, parallelisation.
+11 hours of lectures plus 22 hours of PC labs covering: 
+    Construction of a mathematical model of a physical system, discretisation and de-dimensionalisation; 
+    Numerical methods for ODE and PDE initial value problems, numerical stability; 
+    Linear algebra methods;
+    Numerical methods for ODE and PDE boundary value problems, finite difference and finite element methods; 
+    Many-body problems; 
+    High-performance computing, parallelisation.
