@@ -1,0 +1,61 @@
+100% exam
+
+Learning Outcomes:	
+After taking this unit the student should be able to: 
+    describe the physical processes occurring in the inter-stellar medium; 
+    discuss in detail how stars form from gravitational collapse of dense gas clouds; 
+    demonstrate an understanding of energy transport in stars; 
+    describe in detail the post-main sequence evolution of stars; 
+    solve order of magnitude problems concerning: 
+        spectral line formation, 
+        gas and dust clouds, 
+        gravitational collapse, 
+        hydrostatic equilibrium.
+
+
+Content:	
+Components of the ISM (6 hours): 
+    Atomic hydrogen and 21cm radiation. 
+    Dark clouds. 
+    HII regions. 
+    T-Tauri stars. 
+    HH objects. 
+    Masers. 
+    Obtaining information about the interstellar medium (ISM). 
+    Spectral line shapes. 
+    Interstellar reddening. 
+    Optical depth.
+    Radiative transfer. 
+    Interstellar dust grains. 
+    Formation of molecules. 
+    Radiatively excited regions. 
+    Continuum emission. 
+Stars and Star Formation (5 hours): 
+    Hydrostatic equilibrium. 
+    Collapse processes. 
+    The Virial Theorem. 
+    Star formation. 
+    Evolution of protostars. 
+    Angular momentum and magnetic field problems. 
+    Accretion discs and molecular outflows. 
+    Classification of stars. 
+    The Hertzsprung-Russell diagram. 
+    Zero-age main sequence stars. 
+    Initial stellar mass function. 
+Stellar Structure (6 hours): 
+    Energy transport in stars. 
+    Equations of stellar structure. 
+    Simple stellar models. 
+    Polytropic models. 
+    Evolution off the main sequence. 
+    The helium flash. Shell burning. 
+    The RGB and the AGB. 
+    Giant and supergiant stars. 
+    Variable stars. 
+Stellar Deaths (5 hours): 
+    Late stages of stellar evolution. 
+    Novae. 
+    Supernovae. 
+    Stellar remnants. 
+    Electron and neutron degeneracy pressure. 
+    White dwarfs, neutron stars and black holes.
