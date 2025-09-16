@@ -1,0 +1,22 @@
+100% exam
+
+Learning Outcomes:	
+After taking this unit, the student should be able to:
+    relate the electronic and optical properties of materials to their band structure, densities of electronic states and doping profiles;
+    make quantitative estimates of the parameters that govern the electronic and optical behaviour of real materials;
+    describe the operation of field effect devices and PN diodes;
+    describe optical absorption and emission processes in insulators semiconductors and metals;
+    describe the operation of optical devices based on PN junctions.
+
+
+Content:	
+    Review of band theory and its relationship to the electronic and optical properties of materials. 
+    Introduction to tight binding theory. 
+    The electronic density of states as well as other key band structure parameters and examples of them in real materials. 
+    Review of doping in semiconductors and discussion of different carrier transport processes. 
+    Introduction to the physics of MOS capacitors and their implementation in MOSFETs. 
+    The physics of PN junctions and the electronic properties of PN junction diodes. 
+    Phenomenology and theory of optical absorption and emission processes in semiconductors and insulators. 
+    Models of electronic absorption in semiconductors as well as reflectivity and plasmons in metals. 
+    Introduction to the physics of solar cells and factors controlling their efficiency. 
+    Operation principles and characteristics of LEDs and diode lasers.
