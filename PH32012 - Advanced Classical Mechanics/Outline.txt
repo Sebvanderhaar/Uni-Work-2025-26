@@ -1,0 +1,24 @@
+100% exam
+
+Learning Outcomes:	
+After taking this unit the student should be able to: 
+    show proficiency in using the Lagrangian formulation to solve problems in classical mechanics; 
+    apply methods of the calculus of variations; 
+    use symmetries to derive conservation laws; 
+    show proficiency in using the Hamiltonian formulation of classical mechanics; 
+    formulate and analyse equations of motion for systems of oscillators; 
+    analyse classical field theories.
+
+
+Content:	
+    Lagrangian formulation of classical mechanics. 
+    Calculus of variations. 
+    Hamilton's principle of least action. 
+    Symmetry and conservation laws: 
+        Noether's theorem. 
+        Hamiltonian dynamics. 
+        (Poisson brackets.) 
+        Small oscillations. 
+    Continuous systems and fields; 
+        classical field theory including Klein Gordon field, 
+        symmetries and currents.
