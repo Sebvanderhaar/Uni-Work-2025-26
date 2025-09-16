@@ -1,0 +1,14 @@
+50% Coursework
+50% Exam
+
+Learning Outcomes:	
+After taking this unit, the student should be able to:
+    de-dimensionalise an equation representing a physical system;
+    discretise a differential equation using grid and basis set methods;
+    outline the essential features of each of the simulation techniques introduced and give examples of their use in contemporary science;
+    identify the strengths and weaknesses of a computational approach to modelling;
+    demonstrate practical application of computational techniques to selected physics problems;
+    explain the methodology, relevant issues and output of the investigations performed.
+
+Content:	
+11 hours of lectures plus 22 hours of PC labs covering: Construction of a mathematical model of a physical system, discretisation and de-dimensionalisation; Numerical methods for ODE and PDE initial value problems, numerical stability; Linear algebra methods; Numerical methods for ODE and PDE boundary value problems, finite difference and finite element methods; Many-body problems; High-performance computing, parallelisation.
