@@ -1,0 +1,27 @@
+100% exam
+
+Learning Outcomes:	
+After taking this unit, the student should be able to:
+    describe examples of physical systems that exhibit nonlinear behaviour;
+    use and justify the mathematical and numerical techniques used to study nonlinear systems;
+    analyse simple nonlinear systems;
+    explain what constitutes chaotic behaviour.
+
+
+Content:	
+    Single non-linear oscillator; 
+    coupled oscillators; 
+    non-linear waves and fields. 
+
+    Key concepts to include: 
+        resonant frequency shift, 
+        stability, 
+        bifurcation, 
+        chaos, 
+        solitary waves. 
+    
+    Physical examples will be taken from across a wide range of fields, 
+        including photonics, 
+        electronics, 
+        ecology & biophysics,
+        fluid dynamics.
