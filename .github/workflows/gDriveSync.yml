@@ -29,22 +29,33 @@ jobs:                             # Workflows consist of jobs
           GDRIVE_FOLDER_ID: ${{ vars.GDRIVE_FOLDER_ID }}
         run: |
           python <<EOF
-          import os, json
+          import os, json, sys
           from pydrive2.auth import GoogleAuth
           from pydrive2.drive import GoogleDrive
           from oauth2client.service_account import ServiceAccountCredentials
 
-          # Load credentials from GitHub secret
+          # Load credentials from secret
           creds_json = json.loads(os.environ["GDRIVE_SERVICE_ACCOUNT"])
           scope = ["https://www.googleapis.com/auth/drive"]
           credentials = ServiceAccountCredentials.from_json_keyfile_dict(creds_json, scope)
 
-          # Authenticate
           gauth = GoogleAuth()
           gauth.credentials = credentials
           drive = GoogleDrive(gauth)
 
           folder_id = os.environ["GDRIVE_FOLDER_ID"]
+          print(f"🔎 Checking access to folder: {folder_id}")
+
+          try:
+              folder = drive.CreateFile({'id': folder_id})
+              folder.FetchMetadata(fields='title')
+              print(f"✅ Service account can access folder: {folder['title']}")
+          except Exception as e:
+              print(f"❌ Could not access folder ID {folder_id}")
+              print("👉 Make sure:")
+              print("   1. The folder ID is correct (just the ID, not the whole URL)")
+              print("   2. The service account email has Editor access to that folder")
+              sys.exit(1)
 
           # Upload PDFs
           for root, dirs, files in os.walk("."):
@@ -59,3 +70,4 @@ jobs:                             # Workflows consist of jobs
                       gfile.Upload()
                       print(f"✅ Uploaded {filepath}")
           EOF
+
