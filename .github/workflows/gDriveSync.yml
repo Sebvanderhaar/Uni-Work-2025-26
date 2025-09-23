@@ -43,7 +43,7 @@ jobs:                             # Workflows consist of jobs
           gauth.credentials = credentials
           drive = GoogleDrive(gauth)
 
-          folder_id = os.environ["GDRIVE_FOLDER_ID"]
+          folder_id = os.environ["1M2YG2Bs6jx6HpxpkwzY6ASlGN-MmmE98"]
           print(f"🔎 Checking access to folder: {folder_id}")
 
           try:
