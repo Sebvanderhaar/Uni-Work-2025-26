@@ -23,25 +23,30 @@ jobs:                             # Workflows consist of jobs
           python -m pip install --upgrade pip
           pip install pydrive2
 
-      - name: Upload PDFs to Google Drive  # Step 4: Run Python script
-        env:                               # Inject secrets/variables
+      - name: Upload PDFs to Google Drive
+        env:
           GDRIVE_SERVICE_ACCOUNT: ${{ secrets.GDRIVE_SERVICE_ACCOUNT }}
           GDRIVE_FOLDER_ID: ${{ vars.GDRIVE_FOLDER_ID }}
         run: |
-          echo "$GDRIVE_SERVICE_ACCOUNT" > service_account.json
           python <<EOF
+          import os, json
           from pydrive2.auth import GoogleAuth
           from pydrive2.drive import GoogleDrive
-          import os, json
+          from oauth2client.service_account import ServiceAccountCredentials
 
-          # Authenticate with service account
+          # Load credentials from GitHub secret
+          creds_json = json.loads(os.environ["GDRIVE_SERVICE_ACCOUNT"])
+          scope = ["https://www.googleapis.com/auth/drive"]
+          credentials = ServiceAccountCredentials.from_json_keyfile_dict(creds_json, scope)
+
+          # Authenticate
           gauth = GoogleAuth()
-          gauth.LoadServiceConfigFile("service_account.json")
-          gauth.ServiceAuth()
+          gauth.credentials = credentials
           drive = GoogleDrive(gauth)
 
           folder_id = os.environ["GDRIVE_FOLDER_ID"]
 
+          # Upload PDFs
           for root, dirs, files in os.walk("."):
               for file in files:
                   if file.endswith(".pdf"):
