@@ -1,0 +1,56 @@
+name: Sync PDFs to Google Drive   # A friendly name for your workflow
+
+on:                               # Triggers that run this workflow
+  push:                           # Run on push events
+    branches:
+      - main                      # Replace with your branch (e.g., "master" or "dev")
+
+jobs:                             # Workflows consist of jobs
+  upload-to-drive:                # Name of the job
+    runs-on: ubuntu-latest        # Runner environment (a Linux VM)
+
+    steps:                        # The actual tasks
+      - name: Checkout repo       # Step 1: Get your repo files
+        uses: actions/checkout@v3
+
+      - name: Set up Python       # Step 2: Prepare Python environment
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.x'
+
+      - name: Install dependencies  # Step 3: Install needed Python packages
+        run: |
+          python -m pip install --upgrade pip
+          pip install pydrive2
+
+      - name: Upload PDFs to Google Drive  # Step 4: Run Python script
+        env:                               # Inject secrets/variables
+          GDRIVE_SERVICE_ACCOUNT: ${{ secrets.GDRIVE_SERVICE_ACCOUNT }}
+          GDRIVE_FOLDER_ID: ${{ vars.GDRIVE_FOLDER_ID }}
+        run: |
+          echo "$GDRIVE_SERVICE_ACCOUNT" > service_account.json
+          python <<EOF
+          from pydrive2.auth import GoogleAuth
+          from pydrive2.drive import GoogleDrive
+          import os, json
+
+          # Authenticate with service account
+          gauth = GoogleAuth()
+          gauth.LoadServiceConfigFile("service_account.json")
+          gauth.ServiceAuth()
+          drive = GoogleDrive(gauth)
+
+          folder_id = os.environ["GDRIVE_FOLDER_ID"]
+
+          for root, dirs, files in os.walk("."):
+              for file in files:
+                  if file.endswith(".pdf"):
+                      filepath = os.path.join(root, file)
+                      gfile = drive.CreateFile({
+                          "title": file,
+                          "parents": [{"id": folder_id}]
+                      })
+                      gfile.SetContentFile(filepath)
+                      gfile.Upload()
+                      print(f"✅ Uploaded {filepath}")
+          EOF
