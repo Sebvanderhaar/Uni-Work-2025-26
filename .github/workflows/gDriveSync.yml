@@ -1,4 +1,4 @@
-name: Sync to Google Drive
+name: Flattened Sync to Google Drive
 
 on:
   push:
@@ -10,7 +10,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout repository
+      - name: Checkout repo
         uses: actions/checkout@v3
 
       - name: Install rclone
@@ -27,8 +27,16 @@ jobs:
           echo "type = drive" >> ~/.config/rclone/rclone.conf
           echo "token = ${RCLONE_TOKEN}" >> ~/.config/rclone/rclone.conf
 
-      - name: Sync repo to Google Drive
+      - name: Flatten repo files
+        run: |
+          mkdir -p /tmp/flattened
+          for top in */ ; do
+              mkdir -p "/tmp/flattened/$top"
+              find "$top" -type f -exec cp {} "/tmp/flattened/$top" \;
+          done
+
+      - name: Sync flattened structure to Google Drive
         env:
           RCLONE_REMOTE_NAME: ${{ secrets.RCLONE_REMOTE_NAME }}
         run: |
-          rclone sync . ${RCLONE_REMOTE_NAME}:/GitHubBackup --exclude '.git/**' --drive-use-trash=false
+          rclone sync /tmp/flattened ${RCLONE_REMOTE_NAME}:/GitHubBackup --drive-use-trash=false
